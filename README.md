@@ -1,22 +1,49 @@
-# Lantern Release Artifacts
+# Lantern (Public Release Downloads)
 
-This repository hosts public release artifacts for Lantern.
+If you are not technical, use the **one-line install** below.
 
-## Available release
+## Start Here (Linux x86_64)
 
-- `releases/v0.2.20/lantern-v0.2.20-x86_64-unknown-linux-gnu.tar.gz`
-- `releases/v0.2.20/SHA256SUMS`
-- `releases/v0.2.20/BINARY_HASHES`
-- `releases/v0.2.20/peace-testnet.json`
-- `releases/v0.2.20/peace-mainnet.json`
-- `releases/v0.2.20/RELEASE_NOTES_v0.2.20.md`
+Open Terminal, then paste this:
 
-## Verify download
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/5310S/lantern_release/main/scripts/granny-linux.sh)
+```
 
-From inside `releases/v0.2.20`:
+That is it. The installer will:
+- download the latest Lantern release
+- verify checksum
+- initialize testnet data
+- rotate node identity
+- create `~/lantern/start.sh`
+
+Then start your node with:
+
+```bash
+~/lantern/start.sh
+```
+
+In another Terminal, check health:
+
+```bash
+curl -ks -H "Authorization: Bearer $LANTERN_HTTP_TOKEN" https://127.0.0.1:8645/weave/chain/head
+```
+
+## Current Release
+
+- Version: `v0.2.20`
+- Manifest: [`latest.json`](./latest.json)
+- Artifacts: [`releases/v0.2.20`](./releases/v0.2.20)
+
+## Manual Verify
+
+From `releases/v0.2.20`:
 
 ```bash
 sha256sum -c SHA256SUMS
 ```
 
-The `BINARY_HASHES` file contains per-target binary hashes from the release build pipeline.
+## Notes
+
+- Current easy installer is Linux `x86_64` only.
+- Source code is private; this repository only contains public release artifacts.
