@@ -2,6 +2,34 @@
 
 If you are not technical, use the **one-line install** below.
 
+## Start Here (macOS: Apple Silicon + Intel)
+
+Open Terminal, then paste this:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/5310S/lantern_release/main/scripts/granny-macos.sh)
+```
+
+That is it. The installer will:
+- detect your Mac architecture automatically
+- download the latest macOS release
+- verify checksum
+- initialize testnet data
+- rotate node identity
+- create `~/lantern/start.sh`
+
+Then start your node with:
+
+```bash
+~/lantern/start.sh
+```
+
+In another Terminal, check health:
+
+```bash
+curl -ks -H "Authorization: Bearer $LANTERN_HTTP_TOKEN" https://127.0.0.1:8645/weave/chain/head
+```
+
 ## Start Here (Windows x86_64)
 
 Open PowerShell, then paste this:
@@ -69,5 +97,5 @@ sha256sum -c SHA256SUMS
 
 ## Notes
 
-- Easy installers are provided for Linux `x86_64` and Windows `x86_64`.
+- Easy installers are provided for macOS (`x86_64` + `aarch64`), Linux (`x86_64`), and Windows (`x86_64`).
 - Source code is private; this repository only contains public release artifacts.

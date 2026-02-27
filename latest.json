@@ -4,7 +4,15 @@
   "bootstrap": "93.127.216.241:3000",
   "linux_x86_64": {
     "artifact": "releases/v0.2.20/lantern-v0.2.20-x86_64-unknown-linux-gnu.tar.gz",
-    "sha256": "c83514133379c14dc8bc87dbc11ea2d40a9480afb65349c03623530347e4eb5f"
+    "sha256": "25d3537752e9226e5a85ea7c1f1ce75aea5d7a7ac333f1c8fcf59579ba9d472e"
+  },
+  "macos_x86_64": {
+    "artifact": "releases/v0.2.20/lantern-v0.2.20-x86_64-apple-darwin.tar.gz",
+    "sha256": "8ce742a1847dc5eee1e09e77930ba31329e2bef690fc736f84caad3b5b5507b6"
+  },
+  "macos_aarch64": {
+    "artifact": "releases/v0.2.20/lantern-v0.2.20-aarch64-apple-darwin.tar.gz",
+    "sha256": "0fe138885b9ee936956dc31272a6c499cf9b225c83b3a969c5bc6cc2558cf784"
   },
   "windows_x86_64_installer": {
     "artifact": "releases/v0.2.20/LanternSetup.exe",
