@@ -1,7 +1,5 @@
 # Lantern (Public Release Downloads)
 
-If you are not technical, use the **one-line install** below.
-
 ## Start Here (macOS: Apple Silicon + Intel)
 
 Open Terminal, then paste this:
