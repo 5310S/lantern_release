@@ -1,0 +1,23 @@
+{
+  "chain_id": "peace-mainnet",
+  "notes": "Peace mainnet bundle. Update user_address if customizing genesis; hash/root will change.",
+  "p2p_port": 3000,
+  "rpc_port": 8645,
+  "identity_seed": "peace-mainnet-bootstrap",
+  "bootstrap_nodes": [
+    "93.127.216.241:3000"
+  ],
+  "consensus_mode": "pow-only",
+  "genesis": {
+    "timestamp": 1700000000,
+    "user_address": "pc1lltelka43f7sg05hkwqc9qqmtkx3pcfjjakp9w7mc53c86950ctsrvx65l",
+    "user_amount": 1000000,
+    "treasury_address": "pc1yk5l3r3nfu6mfq3fae4fshrudj5y76uga4nxynnee0pw0v9qvjhq2mzvmu",
+    "treasury_amount": 1050000,
+    "supply_cap": 21000000,
+    "initial_block_reward": 2,
+    "halving_interval_blocks": 6307200
+  },
+  "genesis_hash": "fe08540b59f196e17ae3edb945eb684ab0436bba77314b4b89b4f2ab0deba298",
+  "genesis_state_root": "a816a10134a5a85a4aa50fccc0e8a4d0556546205da718ea8b40ec912d0c0591"
+}

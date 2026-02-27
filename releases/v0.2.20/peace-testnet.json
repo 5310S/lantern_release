@@ -1,0 +1,23 @@
+{
+  "chain_id": "peace-testnet",
+  "notes": "Set genesis.user_address to the intended payout wallet before launching a network; init_peace_testnet validates chain_id/hrp.",
+  "p2p_port": 3000,
+  "rpc_port": 8645,
+  "identity_seed": "peace-testnet-bootstrap",
+  "bootstrap_nodes": [
+    "93.127.216.241:3000"
+  ],
+  "consensus_mode": "pow-only",
+  "genesis": {
+    "timestamp": 1700000000,
+    "user_address": "tpc1khsusq3p5e58gkc0u2n2g5zm9d7m2u328k667qvkq7hmkm2h0q9q5uhk7w",
+    "user_amount": 1000000,
+    "treasury_address": "tpc10n2u0tc5z07zf3czxcphq7kcyn0e9lmmkma68zduylut2yszwmtq33hqr8",
+    "treasury_amount": 1050000,
+    "supply_cap": 21000000,
+    "initial_block_reward": 2,
+    "halving_interval_blocks": 6307200
+  },
+  "genesis_hash": "09924b760df476b5299dad4fa99d65b58c330bc5200b37c1b421d883fddb4833",
+  "genesis_state_root": "31055a0674d994ef9eb88ee309809a3623fc236547987a5c7458829709a72bee"
+}
